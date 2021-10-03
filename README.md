@@ -1,8 +1,8 @@
-# LAB - 02
+# LAB - 03
 
 ## About me page
 
-"About me" page with a 5 question quiz and information about me.
+"About me" page with a 7 question quiz, that includes different kinds of guessing games and information about me with education and work experience and a list of countries that I want to visit.
 
 ### Author: Sergey Otryshko/seatt-c-201n24
 
@@ -12,5 +12,5 @@
 
 ### Reflections and Comments
 
-  In this project I used external css styling and javaScript. Also I used if/else statements for the quiz
+  In this project I used external css styling, JavaScript and ordered and unordered lists in HTML. Also I used if/else statements for the quiz, nested for loops and while loop for the games, utilized arrays, .toLowerCase() and .parseInt() methods.
   
