@@ -6,6 +6,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
       console.log("Nice to meet you " + username + ". Welcome to my page!");
       alert("Nice to meet you " + username + ". Welcome to my page! Please take a short quiz about me");
 
+    function questionOne() {  
       let myName = prompt("Is my name Sergey?").toLowerCase() // question 1
         if (myName === "yes" || myName === "y") {
         alert("That is correct!")
@@ -17,7 +18,9 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
         } else {
           alert("Please answer \"Yes\" or \"No\"")
         }
-
+      } 
+      questionOne()
+      
       let from = prompt("Am I from Portland?").toLowerCase()  // question 2
         if (from === "no" || from === "n") {
         alert("That is correct! I am from Seattle")
