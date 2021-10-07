@@ -65,6 +65,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
   }  
   questionFour();
 
+  questionFive(){
 let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   if (lang === "yes" || lang === "y") {
     alert("I wish I did! But unfortunately I don't")
@@ -78,6 +79,8 @@ let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   }
 alert("Thanks for taking the quiz " + username + " . You did great");
  document.getElementById("greeting").innerHTML = "Welcome " + username + "!";
+  }
+questionFive();
 
 
 let attempts = 4;      // question 6
