@@ -51,7 +51,8 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
       }
       questionThree();
 
- let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
+      questionFour(){
+      let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
     if (cat === "yes" || cat === "y") {
     alert("That is correct! His name is Frodo")
     totalPoints++;
@@ -62,6 +63,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
   } else {
     alert("Please answer \"Yes\" or \"No\"")
   }  
+  questionFour();
 
 let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   if (lang === "yes" || lang === "y") {
