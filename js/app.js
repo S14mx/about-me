@@ -6,6 +6,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
       console.log("Nice to meet you " + username + ". Welcome to my page!");
       alert("Nice to meet you " + username + ". Welcome to my page! Please take a short quiz about me");
 
+    function questionOne() {  
       let myName = prompt("Is my name Sergey?").toLowerCase() // question 1
         if (myName === "yes" || myName === "y") {
         alert("That is correct!")
@@ -17,7 +18,10 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
         } else {
           alert("Please answer \"Yes\" or \"No\"")
         }
+      } 
+      questionOne();
 
+      function questionTwo() {
       let from = prompt("Am I from Portland?").toLowerCase()  // question 2
         if (from === "no" || from === "n") {
         alert("That is correct! I am from Seattle")
@@ -29,7 +33,10 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
         } else {
           alert("Please answer \"Yes\" or \"No\"")
         }
-
+      } 
+      questionTwo();
+      
+      function questionThree(){
       let fromo = prompt("Was I born in Ukraine?").toLowerCase()  // question 3
         if (fromo === "yes" || fromo === "y") {
         alert("That is correct!")
@@ -41,8 +48,11 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
         } else {
           alert("Please answer \"Yes\" or \"No\"")
         }
+      }
+      questionThree();
 
- let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
+      function questionFour(){
+      let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
     if (cat === "yes" || cat === "y") {
     alert("That is correct! His name is Frodo")
     totalPoints++;
@@ -53,7 +63,9 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
   } else {
     alert("Please answer \"Yes\" or \"No\"")
   }  
+  questionFour();
 
+ function questionFive(){
 let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   if (lang === "yes" || lang === "y") {
     alert("I wish I did! But unfortunately I don't")
@@ -67,8 +79,10 @@ let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   }
 alert("Thanks for taking the quiz " + username + " . You did great");
  document.getElementById("greeting").innerHTML = "Welcome " + username + "!";
+  }
+questionFive();
 
-
+function questionSix(){
 let attempts = 4;      // question 6
 let currAttempt = 1;
 let rightAnsw = 72;
@@ -95,7 +109,10 @@ if (answ === rightAnsw) {
 } else {
   alert("You've reached the maximum number of atteempts. The correct answer is " + rightAnsw);
 }
+}
+questionSix();
 
+function questionSeven() {
 let attemptsTwo = 6;   // question 7
 let currAttemptTwo = 1;
 let rightAnswers = ["Florida", "Washington", "California", "Montana", "Hawaii", "Oregon"];
@@ -121,6 +138,8 @@ let stringStates = ""
       alert("Sorry, that is wrong. Guess again.")
     }
   }
+}
+questionSeven();
 
   if (isGuessedCorr){
      totalPoints++;
