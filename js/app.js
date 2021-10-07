@@ -19,7 +19,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
           alert("Please answer \"Yes\" or \"No\"")
         }
       } 
-      questionOne()
+      questionOne();
 
       function questionTwo() {
       let from = prompt("Am I from Portland?").toLowerCase()  // question 2
@@ -34,8 +34,9 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
           alert("Please answer \"Yes\" or \"No\"")
         }
       } 
-      questionTwo()
+      questionTwo();
       
+      questionThree(){
       let fromo = prompt("Was I born in Ukraine?").toLowerCase()  // question 3
         if (fromo === "yes" || fromo === "y") {
         alert("That is correct!")
@@ -47,6 +48,8 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
         } else {
           alert("Please answer \"Yes\" or \"No\"")
         }
+      }
+      questionThree();
 
  let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
     if (cat === "yes" || cat === "y") {

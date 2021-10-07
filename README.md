@@ -13,4 +13,7 @@
 ### Reflections and Comments
 
   In this project I used external css styling, JavaScript and ordered and unordered lists in HTML. Also I used if/else statements for the quiz, nested for loops and while loop for the games, utilized arrays, .toLowerCase() and .parseInt() methods.
+
+  Driver Richard Harvey
+  Navigator Sergey Otryshko
   
