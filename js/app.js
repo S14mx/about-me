@@ -36,7 +36,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
       } 
       questionTwo();
       
-      questionThree(){
+      function questionThree(){
       let fromo = prompt("Was I born in Ukraine?").toLowerCase()  // question 3
         if (fromo === "yes" || fromo === "y") {
         alert("That is correct!")
@@ -51,7 +51,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
       }
       questionThree();
 
-      questionFour(){
+      function questionFour(){
       let cat = prompt("Do I have a cat?").toLowerCase()  // question 4
     if (cat === "yes" || cat === "y") {
     alert("That is correct! His name is Frodo")
@@ -65,7 +65,7 @@ let username = prompt("Hello stranger, what is your name?"); // greeting prompt
   }  
   questionFour();
 
-  questionFive(){
+ function questionFive(){
 let lang = prompt("Do I speak Spanish?").toLowerCase()  // question 5
   if (lang === "yes" || lang === "y") {
     alert("I wish I did! But unfortunately I don't")
@@ -82,7 +82,7 @@ alert("Thanks for taking the quiz " + username + " . You did great");
   }
 questionFive();
 
-
+function questionSix(){
 let attempts = 4;      // question 6
 let currAttempt = 1;
 let rightAnsw = 72;
@@ -109,7 +109,10 @@ if (answ === rightAnsw) {
 } else {
   alert("You've reached the maximum number of atteempts. The correct answer is " + rightAnsw);
 }
+}
+questionSix();
 
+function questionSeven
 let attemptsTwo = 6;   // question 7
 let currAttemptTwo = 1;
 let rightAnswers = ["Florida", "Washington", "California", "Montana", "Hawaii", "Oregon"];
