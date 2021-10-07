@@ -112,7 +112,7 @@ if (answ === rightAnsw) {
 }
 questionSix();
 
-function questionSeven
+function questionSeven() {
 let attemptsTwo = 6;   // question 7
 let currAttemptTwo = 1;
 let rightAnswers = ["Florida", "Washington", "California", "Montana", "Hawaii", "Oregon"];
@@ -138,6 +138,8 @@ let stringStates = ""
       alert("Sorry, that is wrong. Guess again.")
     }
   }
+}
+questionSeven();
 
   if (isGuessedCorr){
      totalPoints++;
