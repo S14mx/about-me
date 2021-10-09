@@ -116,6 +116,8 @@ if (answ === rightAnsw) {
 } else {
   alert('You\'ve reached the maximum number of atteempts. The correct answer is ' + rightAnsw);
 }
+}
+questionSix();
 
 let attemptsTwo = 6; // question 7
 // let currAttemptTwo = 1;
