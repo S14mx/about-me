@@ -95,28 +95,29 @@ let currAttempt = 1;
 let rightAnsw = 72;
 let answ = parseInt(prompt(`Guess a number. You have ${attempts} attempts`));
 
-while (currAttempt < attempts && answ !== rightAnsw) {
-  if (answ < 40) {
-    alert('Too low, guess again');
-  } else if (answ >= 40 && answ < 72) {
-    alert('Still too low but you are getting closer!');
-  } else if (answ > 72 && answ < 80) {
-    alert('Still too high but you are getting closer!');
-  } else {
-    alert('Too high, guess again');
+function questionSix() {
+  while (currAttempt < attempts && answ !== rightAnsw) {
+    if (answ < 40) {
+      alert('Too low, guess again');
+    } else if (answ >= 40 && answ < 72) {
+      alert('Still too low but you are getting closer!');
+    } else if (answ > 72 && answ < 80) {
+      alert('Still too high but you are getting closer!');
+    } else {
+      alert('Too high, guess again');
+    }
+
+    answ = parseInt(prompt(`Guess a number. You have ${attempts - currAttempt} attempts left`));
+    currAttempt++;
   }
 
-  answ = parseInt(prompt(`Guess a number. You have ${attempts - currAttempt} attempts left`));
-  currAttempt++;
+  if (answ === rightAnsw) {
+    alert('You won! The correct answer is ' + rightAnsw);
+    totalPoints++;
+  } else {
+    alert('You\'ve reached the maximum number of atteempts. The correct answer is ' + rightAnsw);
+  }
 }
-
-if (answ === rightAnsw) {
-  alert('You won! The correct answer is ' + rightAnsw);
-  totalPoints++;
-} else {
-  alert('You\'ve reached the maximum number of atteempts. The correct answer is ' + rightAnsw);
-}
-
 questionSix();
 
 let attemptsTwo = 6; // question 7
@@ -125,32 +126,36 @@ let rightAnswers = ['Florida', 'Washington', 'California', 'Montana', 'Hawaii', 
 let isGuessedCorr = false;
 let stringStates = '';
 
-for (let i = 0; i < attemptsTwo; i++) {
-  let userAnsw = prompt(`Guess states that I have been to. You have ${attemptsTwo - i} attempts left.`).toLowerCase();
+function questionSeven() {
+  for (let i = 0; i < attemptsTwo; i++) {
+    let userAnsw = prompt(`Guess states that I have been to. You have ${attemptsTwo - i} attempts left.`).toLowerCase();
 
-  for (let j = 0; j < rightAnswers.length; j++) {
+    for (let j = 0; j < rightAnswers.length; j++) {
 
-    if (userAnsw === rightAnswers[j].toLowerCase()) {
-      isGuessedCorr = true;
+      if (userAnsw === rightAnswers[j].toLowerCase()) {
+        isGuessedCorr = true;
+      }
+    }
+
+    if (isGuessedCorr) {
+
+      alert('Great job! That is correct');
+      break;
+
+    } else {
+      alert('Sorry, that is wrong. Guess again.');
     }
   }
 
   if (isGuessedCorr) {
-
-    alert('Great job! That is correct');
-    break;
-
-  } else {
-    alert('Sorry, that is wrong. Guess again.');
+    totalPoints++;
+  }
+  for (let k = 0; k < rightAnswers.length; k++) {
+    stringStates += rightAnswers[k] + ' ';
   }
 }
 
-if (isGuessedCorr) {
-  totalPoints++;
-}
-for (let k = 0; k < rightAnswers.length; k++) {
-  stringStates += rightAnswers[k] + ' ';
-}
+questionSeven();
 
 alert(`The right answers are: ${stringStates}.`);
 
