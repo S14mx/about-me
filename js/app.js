@@ -2,12 +2,12 @@
 
 let totalPoints = 0;
 
-let username = prompt('Hello stranger, what is your name?'); // greeting prompt
+let username = prompt('Hello stranger, what is your name?');
 console.log('Nice to meet you ' + username + '. Welcome to my page!');
 alert('Nice to meet you ' + username + '. Welcome to my page! Please take a short quiz about me');
 
 function questionOne() {
-  let myName = prompt('Is my name Sergey?').toLowerCase(); // question 1
+  let myName = prompt('Is my name Sergey?').toLowerCase();
   if (myName === 'yes' || myName === 'y') {
     alert('That is correct!');
     totalPoints++;
@@ -23,7 +23,7 @@ function questionOne() {
 questionOne();
 
 function questionTwo() {
-  let from = prompt('Am I from Portland?').toLowerCase(); // question 2
+  let from = prompt('Am I from Portland?').toLowerCase();
   if (from === 'no' || from === 'n') {
     alert('That is correct! I am from Seattle');
     totalPoints++;
@@ -39,7 +39,7 @@ function questionTwo() {
 questionTwo();
 
 function questionThree() {
-  let fromo = prompt('Was I born in Ukraine?').toLowerCase(); // question 3
+  let fromo = prompt('Was I born in Ukraine?').toLowerCase();
   if (fromo === 'yes' || fromo === 'y') {
     alert('That is correct!');
     totalPoints++;
@@ -55,7 +55,7 @@ function questionThree() {
 questionThree();
 
 function questionFour() {
-  let cat = prompt('Do I have a cat?').toLowerCase(); // question 4
+  let cat = prompt('Do I have a cat?').toLowerCase();
   if (cat === 'yes' || cat === 'y') {
     alert('That is correct! His name is Frodo');
     totalPoints++;
@@ -71,7 +71,7 @@ function questionFour() {
 questionFour();
 
 function questionFive() {
-  let lang = prompt('Do I speak Spanish?').toLowerCase(); // question 5
+  let lang = prompt('Do I speak Spanish?').toLowerCase();
   if (lang === 'yes' || lang === 'y') {
     alert('I wish I did! But unfortunately I don\'t');
     console.log('That is correct!');
@@ -90,7 +90,7 @@ alert('Thanks for taking the quiz ' + username + ' . You did great');
 document.getElementById('greeting').innerHTML = 'Welcome ' + username + '!';
 
 
-let attempts = 4; // question 6
+let attempts = 4; //
 let currAttempt = 1;
 let rightAnsw = 72;
 let answ = parseInt(prompt(`Guess a number. You have ${attempts} attempts`));
@@ -120,8 +120,7 @@ function questionSix() {
 }
 questionSix();
 
-let attemptsTwo = 6; // question 7
-// let currAttemptTwo = 1;
+let attemptsTwo = 6;
 let rightAnswers = ['Florida', 'Washington', 'California', 'Montana', 'Hawaii', 'Oregon'];
 let isGuessedCorr = false;
 let stringStates = '';
