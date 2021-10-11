@@ -90,7 +90,7 @@ alert('Thanks for taking the quiz ' + username + ' . You did great');
 document.getElementById('greeting').innerHTML = 'Welcome ' + username + '!';
 
 
-let attempts = 4; //
+let attempts = 4;
 let currAttempt = 1;
 let rightAnsw = 72;
 let answ = parseInt(prompt(`Guess a number. You have ${attempts} attempts`));
@@ -110,6 +110,7 @@ function questionSix() {
     answ = parseInt(prompt(`Guess a number. You have ${attempts - currAttempt} attempts left`));
     currAttempt++;
   }
+
 
   if (answ === rightAnsw) {
     alert('You won! The correct answer is ' + rightAnsw);
